@@ -1,5 +1,5 @@
-#ifndef H_STDFUNCS_H
-#define H_STDFUNCS_H
+#ifndef H_HEAP_MGR_H
+#define H_HEAP_MGR_H
 
 #include <stdlib.h>
 
