@@ -1,6 +1,11 @@
 #ifndef H_LINKED_LIST_H
 #define H_LINKED_LIST_H
 
+#include "error_types.h"
+
+#include <stdlib.h>
+#include <stddef.h>
+
 typedef struct
 {
     void    *b;
@@ -24,7 +29,7 @@ typedef struct
 list_t* list_init();
 err_t   list_fini(list_t *list);
 err_t   list_add(list_t *list, buf_t buf);
-err_t   list_insert(list *list, size_t idx, buf_t buf);
+err_t   list_insert(list_t *list, size_t idx, buf_t buf);
 err_t   list_remove(list_t *list, size_t idx, buf_t *buf);
 
 #endif
